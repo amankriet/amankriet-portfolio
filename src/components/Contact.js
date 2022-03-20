@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div>Contact</div>
+        <section id='contact' className='snap-start w-screen h-screen flex justify-center items-center'>
+            Contact
+        </section>
     )
 }

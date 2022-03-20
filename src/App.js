@@ -1,21 +1,21 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Home from './components/Home';
 import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 
 function App() {
   return (
-    <main className='text-gray-400 bg-gray-900 body-font'>
-      <Navbar />
-      <About />
+    <main className='text-gray-900 bg-gray-100 body-font snap-y snap-mandatory w-screen h-screen overflow-scroll'>
+      <Home />
       <Projects />
       <Skills />
-      <Testimonials />
+      <About />
       <Contact />
+      <Header />
     </main>
   );
 }

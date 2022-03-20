@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function About() {
+function About() {
     return (
-        <div>About</div>
+        <section id='about' className='snap-start w-screen h-screen flex justify-center items-center'>
+            About
+        </section>
     )
 }
+
+export default About
