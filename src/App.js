@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <main className='text-gray-900 bg-gray-100 body-font snap-y snap-mandatory w-screen h-screen overflow-scroll'>
+    <main className='box-border text-gray-900 bg-gray-100 body-font snap-y snap-mandatory w-screen h-screen overflow-scroll'>
       <Home />
       <Projects />
       <Skills />

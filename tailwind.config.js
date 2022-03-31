@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "programming-svg": "linear-gradient(rgba(255, 255, 255, 0.9), rgba(135, 80, 156, 0.9)), url(../public/assets/svg/programming.svg)"
+        "programming-svg": "linear-gradient(rgba(255, 255, 255, 0.9), rgba(200, 200, 255, 0.9)), url(../public/assets/svg/programming.svg)"
       }
     },
   },

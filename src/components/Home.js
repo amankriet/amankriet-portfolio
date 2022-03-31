@@ -4,18 +4,10 @@ import React from 'react'
 function Home() {
 
     return (
-        <section id='home' className='snap-start w-screen h-screen flex relative mt-12 bg-no-repeat bg-right-bottom bg-programming-svg bg-75% md:bg-auto'>
-            <div className='w-full flex flex-col text-center justify-center content-center'>
-                <h1 className='text-6xl'>Hi, I'm Aman Kumar</h1>
-                <h2 className='text-4xl'>Frontend Developer</h2>
-                <div className='text-2xl mt-8'>
-                    <ul className='list-disc list-inside'>
-                        <li>Building cool apps that makes life easier.</li>
-                        <li>Building projects from scratch.</li>
-                        <li>Learning new techs.</li>
-                        <li>Coding.</li>
-                    </ul>
-                </div>
+        <section id='home' className='box-border snap-start w-screen h-screen flex relative bg-no-repeat bg-right-bottom bg-programming-svg bg-contain md:bg-auto'>
+            <div className='w-full max-h-36 md:mt-20 mt-14 flex flex-col text-4xl justify-items-center bg-sky-600 text-gray-200 text-left md:p-8 px-8 py-4'>
+                <h1>Welcome, <br className='md:hidden' />I'm Aman Kumar.</h1>
+                <h2 className='text-2xl'>Frontend Developer</h2>
             </div>
         </section>
     )
