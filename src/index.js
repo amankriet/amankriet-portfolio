@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Collapse, Dropdown, initTE } from "tw-elements";
+
+initTE({ Collapse, Dropdown });
 
 ReactDOM.render(
   <React.StrictMode>
