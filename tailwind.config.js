@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
+  important: true,
   theme: {
     backgroundSize: {
       auto: "auto",
@@ -29,6 +30,7 @@ module.exports = {
       },
     },
   },
+  noImplicitAny: false,
   plugins: [require("tw-elements/dist/plugin.cjs")],
   darkMode: "class",
 };
