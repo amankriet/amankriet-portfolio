@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+  content: ["./src/**/*.{js,jsx}", "./node_modules/tw-elements/dist/js/*.js"],
   important: true,
   theme: {
     backgroundSize: {

@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../assets/svg/logo.svg";
+import { Collapse, Dropdown, initTE } from "tw-elements";
+
+initTE({ Collapse, Dropdown });
 
 export default function Header() {
   return (
@@ -64,7 +67,7 @@ export default function Header() {
                 href="#skills"
                 data-te-nav-link-ref
               >
-                Skills
+                Skillss
               </a>
             </li>
 
