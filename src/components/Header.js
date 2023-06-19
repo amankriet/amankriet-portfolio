@@ -1,55 +1,108 @@
 import React from "react";
+import logo from "../assets/svg/logo.svg";
+import { Collapse, Dropdown, initTE } from "tw-elements";
+
+initTE({ Collapse, Dropdown });
 
 export default function Header() {
   return (
-    <header className="fixed top-0 flex flex-row justify-end items-center md:h-20 h-14 w-full px-8 py-2 bg-sky-600">
-      <svg
-        className="md:h-14 h-10 absolute inset-y-2 left-8"
-        id="e0RDfpZjJzN1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 1608 878"
-        shapeRendering="geometricPrecision"
-        textRendering="geometricPrecision"
-      >
-        <path
-          d="M1,560v5h-1v1h1v5h-1v2h1v3h-1v2h1v1h-1v4h1v2h-1v2h1v3h-1v2h1v3h-1v1h1v3h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h5v1h1v-1h9v1h2v-1h5v-1h3v-1h2v-1h4v-1h1v-1h2v-1h1l1-2h2v-1h1l1-2h2v-1h1v-1h1v-1h1v-1h1l1-2h2v-1h1v-1h1v-1h1l1-2h2v-1h1v-1h1v-1l2-1v-2h3v-1h1v-1l2-1v-2h3v-1h1v-1l2-1v-2h3v-1l2-1v-2h3v-2h3v1l2,1v-2h-1v-3h1v-1h2v-1h1v-1l2-1v-2h3v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h3v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h2v-2h1v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h1v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h2v-3h2l1-4h2v-3h2l1-4h2v-3h2v-2h1v-1l2-1v-2h1v-3h1v-1l2-1l1-4l2-1v-3l2-1l1-4h1v-1h1v-2l2-1v-2h1v-2h1v-2h1v-2h1v-3h1v-1h2v-3h1v-2h1v-2h1v-2h1v-2h1v-2h1v-2h1v-4h1v-3h3v2h1v3h1v2h1v2h1v2h1v3h1v2h1v2h1v3h2v2l2,1v3l2,1v2h1v2h1l1,4l2,1v3l2,1v2h1v2h1v2h1v3l2,1l1,4l2,1v3h2v3h1l1,4l2,1v3h2v3l2,1v3h2v3l2,1v2h1l1,4l2,1v2h1v2h1v2h1l1,4h1v1h1v2h1l-1,2h2l-1,2l2,1v2h1v2h1v2h1v2h1v2h1v3h1v2l2,1v5h1v2h1v3h1l1,6h1v2h1v8h1v4h-2v1h-2v1h-3v1l-4,1-1,2-2-1v2h-2v1h-1l-1,2h-3l-1,2h-2v1l-4,1-1,2h-3v1h-1v1l-2,1v2h-3v1h-2v1h-3v1l-10,1v1h-59v-1h-5v-1h-3v-1l-8-1v-1h-3v-1h-5l-1-2h-3v-1h-1l-1-2h-2v-1h-3v-1h-2v-1h-2v-1h-2v-1h-2v-1h-2v-1h-2v-1h-2v-1h-4v1h1v2h1v1h1v1h1v1h1l1,2h2l1,2h2l1,2h2l1,2h2v1h1l1,2h2v1h2v1h2v1l4,1l1,2h2v1h2v1h3v1h2v1h2v1h2v1h2v1h2v1h2v1h2v1h2v1l8,1v1h3v1h2v1h3v-1h2v1h4v1h56v-1h6v-1h3v1h1v-1h4v-2h4v-1h1v-1l2-1v-2h3v-1h2l1-2h2l1-2h3l1-2h2l1-2h3v1h1v5h1v6h1v4h1v6h1v4h1v2h-1v1h1v2h1v1h-1v2h1v3h1v4h1v3h1v3h1v4h1v4h1v4h1v4h1v4h1v4h1v5h1v6h1v7h1v5h1v7h1v5h1v2h1v3h1v3h1v3h1v3h1v3h1v3h1v4h1v3h1v2h1v3h1v2h1v3h1v11h1v2h1v2h1l1,6l2,1v2h1v2h1v2h1v2h1v3h1v2h1v3h1v2h1v2h1v2h1v2h1v3h2v3l2,1v2h1v2h1v4h1v2h1v4h1v1h1v1l2,1v2h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v1h1v1h1v1h1v1h1v1h1l1,2h2v1h1v-8h-1v-7h-1v-4h-1v-2h-1v-3h-1v-3h-1v-4h-1v-3h-1v-4h-1v-4h-1v-5h-1l-1-6h-1v-2h-1v-3h-1v-3h-1v-4h-1v-4h-1v-5h-1v-5h-1v-3h-1v-5h-1v-5h-1v-2h-1v-8h-1v-4h-1v-3h-1v-4h-1v-3h-1v-3h-1v-4h-1v-3h-1v-3h-1v-4h-1v-3h-1v-4h-1v-3h-1v-3h-1v-4h-1v-8h-2l1-2h-1v-2h-1v-3h-1v-2h-1v-3l-2-1v-5h-1v-2h-1v-4h-2l-1-6h-1v-2h-1l-1-4-2-1v-3h-1v-3h-1v-3h-1v-3h-1v-3h-1v-3h-1v-3h-1v-4h-1v-3h-1v-4h-1v-4h-1v-4h-1l-1-4h1l1-2h2l1-2l4-1v-2h3v-1l2-1v-2h3v-2h3v-1l4-1l1-2h3v-1h1v-2h2l1-2h2v-1h1l1-2h2v-1h1v-1l2-1v-2l2-1v-2h2v-2h2v-2h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h3v-3l2-1l1-4l2-1v-3h1v-6l2-1v-2h2l1-4h2v-2l2-1v-2h2v-3h2v-6h1v-2h1v-1h2v-1h1v-4h1v-1h1v-1l2-1v-2l2-1v-2l2-1v-2h1v-1l2-1v-2h1v-1h1v-1l2-1v-2h1v-1h1v-1h1v-1l2-1v-2h1v-1h2v-2h2v-2h1v-1h1v-1l2-1v-2h2v-2h1v-1l2-1v-2l2-1v-2h1v-1h1v-1h1v-1l2-1v-2l2-1v-2h1v-1h2v-3h2v-3h1v-2h2v-2h1v-2h1v-3h1v-2h2v-2h1v-2h1v-2h1v-2h1v-2h1v-3l2-1v-2l2-1v-2l2-1v-2l2-1v-2h1v-1l2-1v-3h1v-2h1v-2h1v-2h1v-3h1v-1h1l1-2h1v1h2v-1h1v-2h1v-1h2v-2h1v-3h1v-3h1v-2h1v-2h1v-2h1v-2h1v-4h2v-1h1v-2h1v-4h1v-1h1l1-2h2v-2h1v-2h1v-2h1v-2h1v-2h1v-3h2v-5h1v-1l2-1v-3h1v-1h1v-2h1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-4v1l-2,1v4l-2,1v2h-1v1h-2v2h-1l-1,4h-2v3h-1v2l-2,1v2h-1v3h-1v1l-2,1v2h-1v3h-1v1h-2v2h-1v3h-1v2h-2v3h-1v2h-2v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v3h-1v2h-1l-1,4h-1v1h-1v2h-1v1l-2,1v2l-2,1v2h-2v3h-1v2h-1v2h-1v2h-1v3h-1v1h-2v2h-1v2h-1v2h-1v3h-1v2h-2v3h-1v2h-2v4h-2v2h-1v1l-2,1v2h-2v2h-1v1h-1v1l-2,1v2h-2v2h-1v1l-2,1v2h-2v2h-1v1h-1v1l-2,1v2h-2l-1,4h-3v3h-1v1h-1v1l-2,1v2h-1v1h-1v1h-1v1l-2,1v2h-1v2l-2,1v2h-2v2h-1v1h-1l-1,2h-2v5h-1v2h-2v1h-1l-2,8-2,1v2l-2,1v2h-2l-1,4h-2v2l-2,1v6l-2,1v4h-1v3h-2v2h-1v1h-1v1h-1v1l-2,1v2h-3v1h-1v2h-1v1h-1v1h-1v1h-1v1l-2,1v2h-2v3h-1v2h-2v2h-1l-1,2h-2v1h-1v1h-1l-1,2h-3v1h-1v2h-3v2h-3v1h-2v1h-2v1h-2v1l-4,1v-5h-1v-4h-1v-5h-1v-17h-1v-9h-1v-5h-1v-6h-1v-7h-1v-9h-1v-9h-1v-232h1v-7h1v-5h1v-8h1v-7h1l1-24h1v-6h1v-6h1v-6h1v-8h1v-6h1v-1h-1v-2h1v-8h1v-5h1v-3h1v-4h1v-1h-1v-9l2-1v-1h-1l1-10h1v-4h1v-3h1v-4h1v-5h1v-4h1v-3h1v-2h1v-2h1v-4h1v-3h1v-2h1v-5h1v-1h1v-2h1v-5h1v-3h1v-4h1v-3h1v-3h1v-4h1v-2h1v-5h1v-1h1v-2h1v-4h1v-3h1v-3h1l-1-2l2-1v-1h-1v-2h1v-5h1v-3h1l-1-2h1v-3h1v-2h1v-4h1v-6h-1v-3h-1v-1h-2v-2h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v-3h-1v-1h-1l-1-2h-2v-1h-1v8h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1v4h-1v7l-2,1v3h-1v4h-1v2h-1v4h-1v2h-1v4l-2,1v2h-1v2h-1v4h-1v3h-1v3h-1v2h1v1h-1v3h-1v3h-1v5h-1l-1,8h-1v2h-1v2h-1v3h-1v2h-1v3h-1v2h-1v3h-1v2h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1l-1,6h-1v2h-1v3h-1v3h-1v3h-1v4h-1v3h-1v3h-1v1h1v2h-1v3h-1l-1,6h-1v2h-1v5h-1v4h-1v3h-1v3h-1v4h-1v2h-1v4h-1v3h-1v4h-1v4h-1v4h-1v5h-1v6h-1v2h-1v2h-1v4h-1v3h-1v3h-1v3h-1v3h-1v3h-1v3h-1v5l-2,1v3h-1v2h1v1l-2,1v1h1v2h-1v4h-1l-1,8h-1v3h-1v4h-1v5h-1v3h-1v3h-1v8h-1v2h-1v4h-1v3h-1v4h-1v7l-2,1v3h-1v4h-1v3h-1v5h-1v1h-1v2l-2,1v3h-1v2h-1v2h-1v2h-1v2h-1l-1,6h-1v2h-1v2h-1v2h-1v2h-1l-1,2h-2v-2h-1v-3h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-3l-2-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-3h-1v-2h-1v-3h-1v-2l-2-1v-4l-2-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-3l-2-1v-2h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-4h-1v-2h-1v-3h-1v-2h-1v-1h-2v-3h-1v-2h-2v-3l-2-1v-3h-1v-1h-1l-1-2h-2v-1h-1v-2h-1v-1h-1v-2h-1v-1l-2-1v-2h-1v-1h-1v-1h-1v-1l-2-1v-2h-1v-1l-2-1l1-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-16v2l-4,1v2h-1v1h-3v1l-2,1v2h-1v1h-3v2h-3v1h-1v2h-3v1l-2,1v2h-3v2h-3v3h-1v2h-1v1l-2,1v2l-2,1v2l-2,1v2l-2,1v2h-2v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v5h-1v1h-1v2h-1v3h-1v3h-1v3h-1v4h-1v1h-1v2h-1v6h-1v5h-1v13h1v1h-1v54h1v8h1v9h1v15h1v5l2,1v3h1v2h1v3h1v3h1v3h1v3h1v5h1v3h1v5h1v3h1v2h1v3h1v4h1v2h1v3h1v3h1v3h1v4h1v3h1v3h1v4h1v3h1v3h1v4h1v5h1v3h2v5h1v2h1v2h1v2h1v3h2v3h1v2l2,1v3h2v3h1v2l2,1v3h2v3h1v2l2,1v3h1v2h1v3h-1v1h-1l-1,2-4,1v2h-1l-1,2h-3v1l-2,1v2h-3v1l-2,1v2h-3v1h-1v1l-2,1v2h-1l-1,2h-2v1h-1v1h-1v1h-1l-1,2h-2v1h-1v1h-1v1h-1v1h-1l-1,2h-2v1h-1v1h-1l-1,2h-3v2h-3v1h-1v2h-3v1h-3v1h-3v1h-4v-2h-1v-18h1v-4h1v-3h1v-12h1v-14h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v13h-1v9h1v1h-1v2h-1v1h1v1h-1v4h-1v1h1M52,412v-1h-1v-76h1v-5h1v-3h1v-4h1v-3h1v-3h1v-3h1v-4h1v-2h1v-2h1v-2h1v-2h1l1-6h2v-3h1v-2h1v-4h1v-1l2-1l1-4h1v-1h1v-1h1v-1h1v-1l2-1v-2h2v-2h1v-3l2-1v-2h3v-1l2-1v-2h3v-1h1v-2h3v-1h1v-2h3v-1h1v-1l2-1v-2h3v-1h1v-2l4-1v-2h14l1,2h2v2l2,1v2h1v1l2,1v3l2,1v2h1v2h1v2h1v2h1v2h1v3h1v2h1v3h1v2h1v2h1v2h1v2h1v2h1v2h1v3h1v2h1v2h1v2h1v2h1v2h1v2h1v2h1v3h1v2l2,1v5l2,1v2h1l1,4l2,1v3h1v1h1v2h1v3h2v3h1l1,4l2,1v2h1v2h1v2h1v4h1l1,6h1v2h1v3l2,1v2h1v3h1v2h1v2h1v3h1v2h1v2h1v3h1v2h1v2h1v3h1v2h1v2h1v2h1v2h-1v3h-1v3h-1v3h-1v3h-1v3h-1v2h-1v2h-1v3h-1v2h-1v3h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v3h-1v1l-2,1v3h-1v2l-2,1v3h-1v1l-2,1-1,4-2,1v3h-1v1l-2,1v3h-1v1h-2v3h-1v1h-2v3h-2v3h-2l-1,4h-2v3h-1v1l-2,1v2l-2,1v2h-1v1h-1v1h-1l-1,2h-2v2h-2v2h-1v1h-1v1h-1v1h-1v1h-1v1l-2,1v2h-2v2h-1v1h-2v2h-1v1h-1v1h-1v1h-1v1h-1v1l-2,1v2h-3v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1l-2,1v2h-3v2h-3v-1h-1v-2h-1v-2h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-3h-1v-3h-1v-3h-1v-4h-1v-2h-1v-4h-1v-3h-1v-3h-1v-5h-1v-2h-1v-3h-1v-3h-1v-3h-1v-2h1v-1h-1v-2h-1v-3h-1v-3h-1v-4h-1v-3h-1v-6h-1v-2h-1v-4h-1v-3h-1v-4h-1v-2h-1v-2h-1v-2h-1l-1-6h-1v-10h-1v-13h-1v-5m165,5v-1h-1v-2h1v-3h1v-2h1v-3h1v-2h1l1-4l2-1v-2h1v-2h1v-2h1v-2h1v-2h1v-3h1v-2h1v-2h1v-2h1v-2h1v-3h1v-2h1v-2h1v-2h1v-4h1v-3h1v-3h1v-4h1v-3h1v-3h1v-9l2-1v-7h1v-3h1v-5h1v-4h1l1-8h1v-3h1v-4h1v-4h1v-6h1v-2h1v-3h1v-4h1v-3h1v-3h1v-3h1v-2h1v-3h1v-3h1v-3h1v-3h1v-3h1v-1h1v128v84h1v10h1v9h1v8h1v6h1v6h1v6h1v16h1v5h-2v-1l-2-1v-3l-2-1-1-4-2-1v-3l-2-1-1-4-2-1v-3h-2v-3h-1l-1-4-2-1v-3h-2v-3l-2-1-1-4-2-1v-2h-1v-2h-1v-2h-1v-2h-1v-4h-2v-3h-1l-1-4-2-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-2h-1v-3h-1v-2l-2-1v-3h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h-1v-3h-1v-2h-1v-2h1v-1M331,724v1h-1v-1-1h1v1m1,4v4h1v5h1v4l-2-1v-3h-1v-3h1v-1h-1v-6h1v1"
-          transform="translate(254 4)"
-          fill="#D1D5DB"
-        />
-        <path
-          d="M1,117l4,2v3h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1l2,1v2h3v2h10v-1h7v1h1l1-2h5v-1h2v-1l4-1v-2h4v-2h2v-1h2v-1l4-1l1-2h3l1-2h2v-1h1l1-2h3l1-2h4v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v2h3v2h15v-1l2-1v-2h3v-2h3v-1h1l1-2h2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1l1-2h2v-2h1v-1l2-1v-2h2v-2h1v-3h2v-2h1v-1h2v20h-1v2h-1v3h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1l2,1v-2h1v-2h1v-2h1v-3l2-1v-2h2v-2h1v-2h1v-2h1v-2h1v-3h1v-1l2-1v-3l2-1v-2l2-1v-2l2-1v-2h1v-1h1v-2l2-1v-2h1v-2h1v-2h1v-2h1v-2h1v-1h3v1h2v2h1v3h-1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v1l2,1v-2l2-1v-2h1v-2h1v-3h1v-2h1l1-6h2l1-4h2v-2h1v-1h1v-1l2-1v-2h1v-1h1v-1h1v-1h1v-1l2-1v-2h2v-2l2-1v-2h3v-1l2-1v-2h2v-3h2v-2l2-1v-2h4v36h1v2h1v3h1v2h1v2h1v4h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1l2,1v2h3v2h4l1-2h6v-1h2l1-2h2v-1h1v-1h1v-1l2-1v-2h1v-1l2-1v-2h1v-3h1v-1h1v-1l2-1v-2h1v-1h2v-1l2-1v-2h2v-1h3v1h1v1h1v1h1v1h1v1h1l1,2h2v1h1v1h1v1h1v1h1v1h1v1h1v1l2,1v2h3l1,2h2v2h2v1h1v-1h1v1h15v-1h1v-1h2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1l1-2h2l1-2h2v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h1v-1l2-1v-3h2v-3h1v-1h4v2h1v3h1v3h1v9h1v2h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v2h5v-1h2v1h10v-1h2v-1h3v-1h1l1-2h2v-1h1v-1h1v-1h1v-1h1v-1h1l1-2h2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1l1-2h2v-1h1v-1h1v-1h1v-1h1v-1l2-1v-2h1v-1h1v-1l2-1v-2h1v-1h1v-1l2-1v-2h1v-1h1v-1h1v-1l2-1v-2l2-1v-2l2-1v-2h1v-1h1v-2l2-1v-3h1v-2h1v-3h1v-5h1v-1h1v-2h1v-5l2-1v-3h1l1-2h2v1l4,1v39h1v1h1v1l2,1v9h1v3h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v2h3l1,2h2v2h3v2h54v1h5v-1h14v-1h11v-1h8v-1h9v-1h5v-1h4v-1h5v-1h4l1-2h7v-1l6-1v-1h2v-1h3v-1h3v-1h4v-1h3v-1h1v-1h1l1-2h2v-1h1v-1l2-1v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2l-1-2h-1v1h-1v1h-1v1h-1v1h-1v1h-1l-1,2h-3v1h-2v1h-4v1h-3v1h-3v1h-3v1h-3v1h-3v1h-4v1h-4v1h-3v1h-5v1h-4v1h-6v1h-9v1h-7v1h-11v1h-14v1h-52v-1h-1v-59h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v-13-13h-1v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v-2h-16v1h-1v2h-1v4h-1v5h-1v4h-1v4h-1v12h-1v2h1v3h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v6h-1v3h-1v5h-1v1h-1v2h-1l-1,6h-1v1l-2,1v2l-2,1v2h-2v3h-1v1h-2l1,2h-1v1h-1v1l-2,1v2h-1v1h-1v1l-2,1v2h-1v1h-1v1h-1v1l-2,1v2h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1l-1,2-2-1v1h-1v1h-1v1h-1v1l-2,1v2h-1l-1,2h-2v1h-1l-1,2h-2v1h-2v1h-2v1h-5v-1h-1v-6h-1v-9h-1v-7h-1v-5h-1v-5h1v-9h-1v-1h1v-8h-1v-2h1v-2h-1v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v3h-1v8h-1v2h-3v5h-1v4h-1v1h-1v1l-2,1v2h-1v1l-2,1v2h-2v4h-1v1h-2v3h-1v2l-2,1v2h-1v1l-2,1v2h-1v1h-1v1h-1l-1,2h-2v1h-1l-1,2h-2v1h-1v1h-1l-1,2h-2v2h-3v1h-1v2h-4v1h-4v-1h-1v-7h1v-5h1v-4h1v-5l2-1v-2h1v-3l2-1v-3h1v-2h1v-3h1v-2h1l1-8l2-1v-2h1v-1h1l1-2h2v-2h1v-1h2v-1l4-1v-1h1v-2h3v-1h1v-1h1v-1h1v-1l2-1v-2h4v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-6v2h-1v1l-2,1v2h-3v1h-2v2h-3v1l-2,1v2h-1v1h-1v1l-2,1v2h-2v1h-1l-1,2h-2v2h-2l-1,4h-2v3h-2v3h-2v3h-2v2l-2,1v3h-2v2h-1v3h-1v1h-1v2h-1v1l-2,1v2h-1v1l-2,1-1,6h-1v1l-2,1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1l-2,1v2l-2,1-1,4h-2l-1,4h-2l-1,4h-2l-1,2h-3v-2h-1v-50h1v-3h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-4l-1,2h-2v1h-2v1h-2v1h-2v1l-4,1v2h-1v1h-3v3h-2v3h-2l-1,4h-3v1l-2,1v2h-1v1h-1v1h-1v1l-2,1v2h-1v1h-1v1h-1v1h-1v1h-1v1l-2,1v2h-2v1l-2,1v2h-3v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-1v1h-1l-1,2h-2v1h-1v1h-1v1h-1v1h-1l-1,2h-2v1l-2,1v2l-2,1v3h-1v1h-2v-2h-1v-16h1v-1h-1v-7h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-1v5h-1l-1,2h-2v4h-1v2h-1v1h-2v1h-1v1l-2,1v2l-2,1v2h-1v2h-1v2h-1v3h-1v2h-1v2h-1v2h-1l-1,4-2,1v2h-1v2h-1v3h-1v2h-2v3h-1v2h-2v2h-1v1h-1v1l-2,1v2h-2v2h-1v1l-2,1v2h-4v-4h1v-3h1v-4h1v-3h1v-9h-1v-4h-1v-5h-1v-3h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v1h-1v3h-1v3h-1v4h-1v3h-1v5h-1v1h1v4h-1v5h-1v3h-1l-1,6h-1v2h-1v6h-1v2h-1v1h-2v1h-3l-1,2h-2v1h-2v1h-2l-1,2-4,1-1,2h-3l-1,2h-2v1h-2v1h-2v1l-4,1-1,2h-3v2h-3v1h-2v1h-2v1h-2v1h-3v1h-5v1h-3v-1h-1v-13h1v-16h1v-5h1v-3h1v-2h1v-9h1v-3h1v-5h1v-7h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v3h-1v5h-1v3h-1v3h-1v9h-1v2h-1v5h-1v14h-1v6h-1v20h1v1"
-          transform="translate(672 455)"
-          fill="#D1D5DB"
-        />
-        <path
-          d="M1,77v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2h2v2h1v-1h4v-1h2v-1h12v-1h6v-1l12-1v-1h2v-1h12v-1h6v-1l12-1v-1h3v-1h11v-1h6v-1l12-1v-1h5v-1h9v-1h6v-1h6v-1h6v-1h7v-1h7v-1h6v-1h4v1h2v-1h6l1-2h12v-1h6v-1h7v-1h6v-1h2v-1h11v-1h6v-1h7v-1h6v-1h2v-1h11v-1h6v-1h7v-1h6v-1h2v-1h11v-1h6v-1h3v-1h11v-1h5v-1h7v-1h6v-1h5v-1h9v-1h6v-1h6v-1h6v-1h13v-1h6v-1h7v-1h6v-1h6v-1h7v-1h6v-1h7v-1h6v-1h2v-1h11v-1h6v-1h7v-1h6v-1h6v-1h7v-1h6v-1h7v-1h6v-1h6v-1h7v-1h6v-1h7v-1h2v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1l-1-2h-2v-1h-1v-1h-1v-1l-2-1v1h-5v1h-7v1h-6v1h-13v1h-6l-1,2h-12v1h-6v1h-7v1h-6v1h-2v1h-11v1h-6v1h-7v1h-6v1h-7v1h-6v1h-6v1h-7v1h-6v1h-2v1h-11v1h-6v1h-7v1h-6v1h-4v1h-9v1h-6v1h-7v1h-6v1h-6v1h-7v1h-6v1h-7v1h-3v-1h-2v1h-2v1h-12v1h-6v1l-12,1v1h-2v1h-12v1h-6v1l-12,1v1h-2v1h-12v1h-6v1l-12,1v1h-3v1h-11v1h-6v1l-12,1v1h-3v1h-11v1h-6v1h-6v1h-6v1h-6v1h-8v1h-6v1h-7v1h-4v-1h-1v1h-7v1L61,66v1h-2v1h-12v1h-6v1h-6v1h-6v1h-7v1h-7v1h-5v1h-7v1h-3v1h1"
-          transform="translate(776 620)"
-          fill="#D1D5DB"
-        />
-        <path
-          d="M1,6v1h1v2h1v1h1v1h1v1h1l1,2h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1l1,2l8-1v-1h2v-1h2v-1h1v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1L15,2h-2v-2h-1L11,2L7,3v1h-3v1h-4v1h1"
-          transform="translate(1402 589)"
-          fill="#D1D5DB"
-        />
-      </svg>
-      <nav className="md:flex hidden flex-col w-2/6 max-w-md sm:flex-row justify-items-center text-xl text-gray-300 justify-between">
-        <a className="hover:text-blue-300 cursor-pointer" href="#home">
-          Home
-        </a>
-        <a className="hover:text-blue-300 cursor-pointer" href="#skills">
-          Skills
-        </a>
-        <a className="hover:text-blue-300 cursor-pointer" href="#projects">
-          Projects
-        </a>
-        <a className="hover:text-blue-300 cursor-pointer" href="#about">
-          About Me
-        </a>
-        <a className="hover:text-blue-300 cursor-pointer" href="#contact">
-          Contact
-        </a>
-      </nav>
-    </header>
+    /* Main navigation */
+    <nav
+      className="absolute top-0 flex-no-wrap flex w-full items-center justify-between md:flex-wrap md:justify-start text-xl text-gray-500 bg-transparent"
+      data-te-navbar-ref
+    >
+      <div className="flex w-full flex-wrap items-center justify-between px-3">
+        {/* Logo */}
+        <div className="flex items-center m-2">
+          <a href="#home">
+            <img
+              src={logo}
+              alt="Aman Kumar"
+              loading="lazy"
+              className="h-14"
+            ></img>
+          </a>
+        </div>
+
+        {/* hamburger button for mobile view */}
+        <button
+          className="block ml-auto border-0 px-2 text-xl text-gray-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 md:hidden"
+          type="button"
+          data-te-collapse-init
+          data-te-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          {/* Hamburger icon */}
+          <span className="[&>svg]:w-7">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-7 w-7"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+
+        {/* Collapsible navigation container */}
+        <div
+          className="!visible hidden flex-grow basis-[100%] items-center md:!flex md:basis-auto"
+          id="navbarSupportedContent1"
+          data-te-collapse-item
+        >
+          <ul
+            className="list-style-none ml-auto flex flex-col items-end pr-0 md:flex-row"
+            data-te-navbar-nav-ref
+          >
+            <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
+              <a
+                className="hover:text-blue-300 focus:text-gray-700"
+                href="#skills"
+                data-te-nav-link-ref
+              >
+                Skills
+              </a>
+            </li>
+
+            <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
+              <a
+                className="hover:text-blue-300 focus:text-gray-700"
+                href="#projects"
+                data-te-nav-link-ref
+              >
+                Projects
+              </a>
+            </li>
+
+            <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
+              <a
+                className="hover:text-blue-300 focus:text-gray-700"
+                href="#about"
+                data-te-nav-link-ref
+              >
+                About Me
+              </a>
+            </li>
+
+            <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
+              <a
+                className="hover:text-blue-300 focus:text-gray-700"
+                href="#contact"
+                data-te-nav-link-ref
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }

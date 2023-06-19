@@ -19,12 +19,16 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        "fb-svg": "url(assets/svg/fb.svg)",
+        "linear-gradient":
+          "linear-gradient(rgba(255, 255, 255, 0.8), rgba(218, 235, 246, 1))",
         "programming-svg":
-          "linear-gradient(rgba(255, 255, 255, 0.8), rgba(243, 244, 246, 1)), url(../public/assets/svg/programming.svg)",
+          "linear-gradient(rgba(255, 255, 255, 0.8), rgba(218, 235, 246, 1)), url(../public/assets/svg/programming.svg)",
         "varanasi-ghat":
-          "radial-gradient(rgba(255, 255, 255, 0.1), rgba(243, 244, 246, 1)), url(../public/assets/imgs/varanasi_ghat.jpg)",
+          "radial-gradient(rgba(255, 255, 255, 0.1), rgba(243, 244, 246, 1)), url(assets/imgs/varanasi_ghat.jpg)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
+  darkMode: "class",
 };

@@ -1,13 +1,16 @@
 import React from "react";
-// import programmingSvg from './assets/svg/programming.svg'
+import Header from "./Header";
 
 function Home() {
   return (
     <section
       id="home"
-      className="box-border snap-end w-screen h-[calc(100vh-80px)] md:mt-20 mt-14 grid content-center bg-no-repeat bg-right-bottom bg-programming-svg bg-contain md:bg-auto"
+      className="snap-start w-screen h-screen bg-no-repeat bg-right-bottom bg-programming-svg bg-contain md:bg-auto bg-fixed"
     >
-      <div className="w-full pl-8 text-4xl flex-col justify-center text-gray-500 text-left">
+      <header>
+        <Header />
+      </header>
+      <div className="container mx-auto text-4xl flex flex-col h-full justify-center items-start text-gray-500 text-left">
         <div className="w-fit h-fit text-center">
           <h2 className="text-7xl font-semibold">Aman Kumar</h2>
           <p className="text-xl">Front-End Engineer (SDE-1)</p>
