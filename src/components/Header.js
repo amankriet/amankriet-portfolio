@@ -1,10 +1,26 @@
 import React from "react";
 import logo from "../assets/svg/logo.svg";
 import { Collapse, Dropdown, initTE } from "tw-elements";
+import navMenu from "../utils/navMenu";
 
 initTE({ Collapse, Dropdown });
 
 export default function Header() {
+
+  function NavList(navTitle) {
+    return (
+      <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
+        <a
+          className="hover:text-blue-300 focus:text-gray-700"
+          href={`#${navTitle.toLowerCase()}`}
+          data-te-nav-link-ref
+        >
+          {navTitle}
+        </a>
+      </li>
+    )
+  }
+
   return (
     /* Main navigation */
     <nav
@@ -64,10 +80,20 @@ export default function Header() {
             <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
               <a
                 className="hover:text-blue-300 focus:text-gray-700"
+                href="#about"
+                data-te-nav-link-ref
+              >
+                About
+              </a>
+            </li>
+
+            <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
+              <a
+                className="hover:text-blue-300 focus:text-gray-700"
                 href="#skills"
                 data-te-nav-link-ref
               >
-                Skillss
+                Skills
               </a>
             </li>
 
@@ -78,16 +104,6 @@ export default function Header() {
                 data-te-nav-link-ref
               >
                 Projects
-              </a>
-            </li>
-
-            <li className="mb-4 md:mb-0 md:pl-2" data-te-nav-item-ref>
-              <a
-                className="hover:text-blue-300 focus:text-gray-700"
-                href="#about"
-                data-te-nav-link-ref
-              >
-                About Me
               </a>
             </li>
 
