@@ -13,11 +13,11 @@ export default function Footer() {
             id="footer"
             className="snap-start w-full h-auto flex flex-col">
             <footer
-                className="container mx-auto w-full h-56 flex flex-col items-center text-4xl p-8 text-gray-600 bg-varanasi-ghat bg-no-repeat bg-cover md:bg-bottom">
-                <div className="w-3/4 h-fit text-xl font-semibold">
+                className="md:container mx-auto w-full h-56 flex flex-col items-center text-4xl p-8 text-gray-600 bg-varanasi-ghat bg-no-repeat bg-cover md:bg-bottom">
+                <div className="w-3/4 h-fit text-xl font-semibold text-primary">
                     <h2>No <span>&#169;</span> copyright issues.</h2>
                 </div>
-                <div className="text-xl w-3/4">
+                <div className="text-xl w-3/4 text-primary">
                     <p>You can find me here:</p>
                 </div>
                 <div className="text-xl w-3/4 flex flex-row gap-4">

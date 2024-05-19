@@ -31,7 +31,8 @@ module.exports = {
           "linear-gradient(rgba(255, 255, 255, 0.8), rgba(218, 235, 246, 1)), url(../public/assets/svg/programming.svg)",
         "varanasi-ghat":
           "radial-gradient(rgba(150, 150, 150, 0.5), rgba(30, 30, 30, 1)), url(assets/imgs/varanasi_ghat.jpg)",
-        'my-pic': 'url(assets/imgs/my_pic.png)'
+        'my-pic': 'url(assets/imgs/my-pic.png)',
+        'my-icon': 'url(assets/imgs/my-icon.jpeg)',
       },
       colors: {
         'secondary': '#222',
