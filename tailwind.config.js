@@ -33,9 +33,6 @@ module.exports = {
           "radial-gradient(rgba(150, 150, 150, 0.5), rgba(30, 30, 30, 1)), url(assets/imgs/varanasi_ghat.jpg)",
         'my-pic': 'url(assets/imgs/my_pic.png)'
       },
-      backgroundPositionX: {
-        'custom-right': 'max(320px, 90%)'
-      },
       colors: {
         'secondary': '#222',
         'secondary-100': '#333',
