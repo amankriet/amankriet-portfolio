@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+© Aman Kumar
+All Rights Reserved
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Privacy Policy**
 
-## Available Scripts
+Aman Kumar operates the https://amankriet.com website (the "Service").
 
-In the project directory, you can run:
+This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
-### `npm start`
+**Analytics**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We may use third-party service providers, such as Google Analytics, to monitor and analyze the use of our Service. These services may collect information such as your IP address, browser type, pages visited, and time spent on those pages. This information is used to improve the user experience and optimize the performance of our website.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Cookies**
 
-### `npm test`
+Our website may use cookies and similar tracking technologies to enhance your browsing experience. Cookies are files with small amounts of data that may include an anonymous unique identifier. You have the option to accept or refuse these cookies and to know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Social Media Plugins**
 
-### `npm run build`
+Our website may include social media plugins, such as Facebook, Twitter, and LinkedIn buttons. These plugins may collect your IP address, which page you are visiting on our site, and may set a cookie to enable the plugin to function properly. Your interactions with these plugins are governed by the privacy policies of the companies providing them.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Links to Other Sites**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Our Service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Changes to This Privacy Policy**
 
-### `npm run eject`
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Contact Us**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions about this Privacy Policy, please contact us at - amankriet@gmail.com.
