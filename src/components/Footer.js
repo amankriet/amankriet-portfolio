@@ -11,9 +11,9 @@ export default function Footer() {
   return (
     <section
       id="footer"
-      className="snap-start w-screen h-full flex flex-col bg-varanasi-ghat bg-no-repeat bg-cover md:bg-bottom md:bg-75%"
+      className="snap-start w-screen h-auto flex flex-col bg-varanasi-ghat bg-no-repeat bg-cover md:bg-bottom md:bg-75%"
     >
-      <div className="w-full h-48 flex flex-col items-center text-4xl p-8 text-gray-600">
+      <footer className="w-full h-48 flex flex-col items-center text-4xl p-8 text-gray-600">
         <div className="w-3/4 h-fit text-xl font-semibold">
           <h2>
             No <span>&#169;</span> copyright issues.
@@ -80,7 +80,7 @@ export default function Footer() {
             ></img>
           </a>
         </div>
-      </div>
+      </footer>
     </section>
   );
 }

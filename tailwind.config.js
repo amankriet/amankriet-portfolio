@@ -1,3 +1,4 @@
+const autoprefixer = require("autoprefixer");
 module.exports = {
   content: ["./src/**/*.{js,jsx}", "./node_modules/tw-elements/dist/js/*.js"],
   important: true,
@@ -18,6 +19,9 @@ module.exports = {
       square: "square",
       roman: "upper-roman",
     },
+    variants: {
+      fill: ['hover', 'focus']
+    },
     extend: {
       backgroundImage: {
         "fb-svg": "url(assets/svg/fb.svg)",
@@ -27,10 +31,16 @@ module.exports = {
           "linear-gradient(rgba(255, 255, 255, 0.8), rgba(218, 235, 246, 1)), url(../public/assets/svg/programming.svg)",
         "varanasi-ghat":
           "radial-gradient(rgba(255, 255, 255, 0.1), rgba(243, 244, 246, 1)), url(assets/imgs/varanasi_ghat.jpg)",
+        'my-pic': 'url(assets/imgs/my_pic.png)'
       },
+      colors: {
+        'secondary': '#222',
+        'secondary-100': '#333',
+        'secondary-500': '#111'
+      }
     },
   },
   noImplicitAny: false,
-  plugins: [require("tw-elements/dist/plugin.cjs")],
-  darkMode: "class",
-};
+  plugins: [autoprefixer, require("tw-elements-react/dist/plugin.cjs")],
+  darkMode: "class"
+}
