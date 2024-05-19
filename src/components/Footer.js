@@ -18,7 +18,7 @@ export default function Footer() {
                     <h2>No <span>&#169;</span> copyright issues.</h2>
                 </div>
                 <div className="text-xl w-3/4 text-primary">
-                    <a href={'%PUBLIC_URL%/PrivacyPolicy.html'}>Privacy Policy</a>
+                    <a href={'/PrivacyPolicy.html'}>Privacy Policy</a>
                 </div>
                 <div className="text-xl w-3/4 text-primary">
                     <p>You can find me here:</p>
