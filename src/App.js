@@ -9,10 +9,10 @@ import ReactGA from 'react-ga4'
 
 ReactGA.initialize([
     {
-        trackingId: 'G-2C6B6W1Y5S',
-        gaOptions: {
-
-        }
+        trackingId: 'G-2C6B6W1Y5S'
+    },
+    {
+        trackingId: 'G-YDJ4RTY897'
     }
 ]);
 
