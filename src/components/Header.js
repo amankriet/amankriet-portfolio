@@ -3,13 +3,14 @@ import {ReactComponent as Menu} from '../assets/svg/menu-right.svg'
 
 function Header() {
     return (
-        <header className={'fixed bg-secondary-100 drop-shadow-2xl w-full top-0'}>
-            {/*Logo*/}
-            <a href={'#home'} id="logo">
-                <Logo className={'absolute h-12 md:h-14 top-2 left-2 cursor-pointer hover:fill-primary-600 fill-primary'}/>
-            </a>
+        <header className={'fixed bg-secondary-100 drop-shadow-2xl w-full rounded-b-lg top-0'}>
             {/*Navigation Bar*/}
-            <nav className={'h-auto flex items-center justify-end gap-4 p-3 md:p-6 md:text-xl flex-wrap px-4 text-primary'}>
+            <nav className={'h-auto relative md:container md:mx-auto flex items-center justify-end gap-4 p-3 md:p-6 md:text-xl flex-wrap px-4 text-primary'}>
+                {/*Logo*/}
+                <a href={'#home'} id="logo">
+                    <Logo className={'absolute h-12 md:h-14 top-2 left-2 cursor-pointer hover:fill-primary-600 fill-primary'}/>
+                </a>
+
                 {/*Menu Icon*/}
                 <a href="#menu" id="menu">
                     <Menu className="h-10 w-auto md:hidden fill-primary hover:fill-primary-600" />

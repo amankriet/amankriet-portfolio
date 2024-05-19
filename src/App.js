@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="box-border body-font w-screen h-screen text-primary bg-secondary">
             <Header/>
-            <div className={'*:py-8 *:pt-[4.2rem] md:*:pt-[4.8rem] *:px-8 *:bg-inherit *:bg-secondary h-screen box-border'}>
+            <div className={'*:bg-inherit *:bg-secondary h-screen box-border *:pt-[4.2rem] *:md:pt-[4.8rem] last:*:md:pt-0'}>
                 <Home/>
                 <Skills/>
                 <Projects/>
