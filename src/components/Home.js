@@ -26,6 +26,7 @@ function Home() {
                        data-twe-ripple-color="light"
                        href="https://drive.google.com/file/d/1-die7l5PsNrFeISLLZ7wV7cd6nX6buNO/view?usp=drive_link"
                        target="_blank"
+                       rel="noopener noreferrer"
                        title={'Click to open my resume'}
                        role="button">
                         My Resume
